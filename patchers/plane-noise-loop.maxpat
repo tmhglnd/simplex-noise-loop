@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "jit.pwindow",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 474.0, 403.5, 80.0, 60.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1081,7 +1092,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 638.0, 136.0, 640.0, 480.0 ],
+						"rect" : [ 116.0, 177.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1111,6 +1122,18 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 270.0, 418.0, 183.0, 22.0 ],
+									"text" : "engine viddll, fps 60, codec h264"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -1129,18 +1152,6 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 331.75, 40.0, 150.0, 154.0 ],
 									"text" : "capture the texture to a jit.matrix \n\nwhen the write is started open the gate. \n\nAfter timer is done close the gate and stop the capture\n\ncodec = gif"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-178",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 331.75, 265.0, 57.0, 22.0 ],
-									"text" : "codec gif"
 								}
 
 							}
@@ -1457,13 +1468,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-111", 0 ],
-									"source" : [ "obj-178", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-112", 1 ],
 									"source" : [ "obj-198", 0 ]
 								}
@@ -1473,6 +1477,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-116", 0 ],
 									"source" : [ "obj-199", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-111", 0 ],
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -2958,7 +2969,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 1,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
+					"order" : 0,
 					"source" : [ "obj-4", 0 ]
 				}
 

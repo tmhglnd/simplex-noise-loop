@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "jit.pwindow",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 474.0, 403.5, 80.0, 60.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1776,8 +1787,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 331.75, 265.0, 57.0, 22.0 ],
-									"text" : "codec gif"
+									"patching_rect" : [ 270.0, 418.0, 183.0, 22.0 ],
+									"text" : "engine viddll, fps 60, codec h264"
 								}
 
 							}
@@ -2387,7 +2398,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_gl_texture", "", "" ],
-					"patching_rect" : [ 45.0, 478.5, 300.0, 35.0 ],
+					"patching_rect" : [ 45.0, 478.5, 301.0, 35.0 ],
 					"text" : "jit.gl.node nslp @name post @dim 1920 1080 @adapt 0 @fsaa 1 @capture 1 @erase_color 0 0 0 0"
 				}
 
@@ -3297,7 +3308,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 1,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
+					"order" : 0,
 					"source" : [ "obj-4", 0 ]
 				}
 

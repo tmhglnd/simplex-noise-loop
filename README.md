@@ -18,7 +18,7 @@ In this repository you'll find a few examples on how to create a Simplex Noise L
 ![particles-loop](./media/particle-noise-loop.gif)
 
 
-# Install
+# Usage
 
 Download zip
 ```

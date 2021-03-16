@@ -1780,7 +1780,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 638.0, 136.0, 640.0, 480.0 ],
+						"rect" : [ 58.0, 224.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1838,8 +1838,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 270.0, 418.0, 57.0, 22.0 ],
-									"text" : "codec gif"
+									"patching_rect" : [ 270.0, 418.0, 183.0, 22.0 ],
+									"text" : "engine viddll, fps 60, codec h264"
 								}
 
 							}
@@ -2599,7 +2599,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 45.0, 30.0, 331.0, 33.0 ],
-					"text" : "1D Noise Loop Circle"
+					"text" : "Noise Loop Circle"
 				}
 
 			}
